@@ -15,7 +15,7 @@ const navLinks = [
 
 export const Header = () => {
   return (
-    <header className="sticky top-0">
+    <header className="sticky top-0 z-10 backdrop-blur-lg bg-background/20">
       <div className="flex justify-center items-center py-3 gap-1 bg-primary text-white dark:text-black text-sm">
         <p className="text-white/60 hidden md:block dark:text-black/60">
           Hora de aumentar seu sucesso financeiro.
