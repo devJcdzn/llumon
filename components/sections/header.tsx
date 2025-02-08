@@ -1,9 +1,9 @@
 import { cn } from "@/lib/utils";
-import { ArrowRight } from "lucide-react";
-import { MenuIcon } from "lucide-react";
+import { ArrowRight, MenuIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { buttonVariants } from "../ui/button";
+import { ToggleThemeButton } from "../toggle-theme-button";
 
 const navLinks = [
   { path: "#about", text: "Sobre" },
@@ -17,7 +17,9 @@ export const Header = () => {
   return (
     <header className="sticky top-0">
       <div className="flex justify-center items-center py-3 gap-1 bg-primary text-white dark:text-black text-sm">
-        <p className="text-white/60 dark:text-black/60">Hora de aumentar seu sucesso financeiro.</p>
+        <p className="text-white/60 dark:text-black/60">
+          Hora de aumentar seu sucesso financeiro.
+        </p>
         <div className="inline-flex gap-1 items-center">
           <p>
             Garanta seu acesso <strong>BETA</strong>
@@ -35,7 +37,7 @@ export const Header = () => {
             className="rounded-lg bg-black p-1"
           />
           <MenuIcon className="size-6 hidden md:hidden" />
-          <nav className="hidden md:flex gap-6 text-primary/60 transition-colors">
+          <nav className="hidden md:flex items-center gap-6 text-primary/60 transition-colors">
             {navLinks.map((link) => (
               <Link
                 href={link.path}
@@ -47,10 +49,11 @@ export const Header = () => {
             ))}
             <Link
               href={"#"}
-              className={cn(buttonVariants({ variant: "primary", size: "sm" }))}
+              className={cn(buttonVariants({ variant: "primary" }))}
             >
               Solicitar BETA
             </Link>
+            <ToggleThemeButton />
           </nav>
         </div>
       </div>
