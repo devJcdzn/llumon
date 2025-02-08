@@ -24,6 +24,8 @@ export default {
         },
       },
       colors: {
+        PRIMARY_PINK: "#FF66C4",
+        PRIMARY_YELLOW: "#FFDE59",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
