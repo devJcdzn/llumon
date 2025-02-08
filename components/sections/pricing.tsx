@@ -22,7 +22,7 @@ const pricingTiers = [
     plan: "BYOG",
     monthlyPrice: 99,
     yearlyPrice: 990,
-    buttonText: "Já tenho meu próprio Gateway!",
+    buttonText: "Quero integrar!",
     description:
       "Build Your Own Gateway, ideal para empresas que já possuem gateways e querem apenas integra-los para nossa api simplificada e vantagens.",
     popular: false,
