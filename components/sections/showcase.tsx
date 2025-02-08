@@ -4,7 +4,7 @@ export const ProductShowcase = () => {
   return (
     <section className="py-24 bg-gradient-to-t from-PRIMARY_PINK/30 to-transparent">
       <div className="px-4 md:py-0 container mx-auto">
-        <div className="max-w-[540px] mx-auto">
+        <div className="section-heading">
           <div className="flex justify-center">
             <div className="tag">Revolucione seus checkouts</div>
           </div>

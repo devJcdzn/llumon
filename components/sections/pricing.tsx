@@ -2,6 +2,7 @@ import Link from "next/link";
 import { buttonVariants } from "../ui/button";
 import { cn } from "@/lib/utils";
 import { Check } from "lucide-react";
+import { HighlightBadge } from "../highlight-badge";
 
 const pricingTiers = [
   {
@@ -49,8 +50,8 @@ export const Pricing = () => {
   return (
     <section>
       <div className="px-4 mdx-0 container mx-auto">
-        <div className="max-w-[540px] mx-auto">
-          <h2 className="section-title text-primary">Nossos Preços</h2>
+        <div className="section-heading">
+          <h2 className="section-title">Nossos Preços</h2>
           <p className="section-subtitle mt-5">
             Da gratuidade vitalícia até o plano que melhor te faz crescer.
           </p>
@@ -58,10 +59,7 @@ export const Pricing = () => {
         <div className="flex flex-col gap-6 items-center mt-10 lg:flex-row lg:items-end lg:justify-center">
           {pricingTiers.map((plan) => (
             <div
-              className={cn(
-                "p-10 rounded-xl shadow-sm shadow-black/20 dark:shadow-white/20 border border-gray-100/10 dark:border-gray-600/10",
-                plan.inverse ? "bg-primary" : ""
-              )}
+              className={cn("card", plan.inverse ? "bg-primary" : "")}
               key={plan.plan}
             >
               <div className="flex justify-between">
@@ -73,16 +71,7 @@ export const Pricing = () => {
                 >
                   {plan.plan}
                 </h3>
-                {plan.popular && (
-                  <div className="tag shadow-lg shadow-PRIMARY_PINK/20">
-                    <span
-                      className="bg-gradient-to-br from-PRIMARY_PINK to-PRIMARY_YELLOW 
-                    text-transparent bg-clip-text"
-                    >
-                      + Popular
-                    </span>
-                  </div>
-                )}
+                {plan.popular && <HighlightBadge>+ Popular</HighlightBadge>}
               </div>
               <div className="flex items-baseline gap-1 mt-7">
                 <span

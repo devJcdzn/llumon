@@ -21,6 +21,14 @@ body {
   .section-subtitle {
     @apply text-center text-[22px] leading-[30px] tracking-tight text-primary/80 mt-5
   }
+
+  .section-heading {
+    @apply max-w-[540px] mx-auto
+  }
+
+  .card {
+    @apply p-10 rounded-xl shadow-sm shadow-black/20 dark:shadow-white/20 border border-gray-100/10 dark:border-gray-600/10 max-w-xs w-full
+  }
 }
 
 @layer base {
