@@ -17,7 +17,7 @@ export const Header = () => {
   return (
     <header className="sticky top-0">
       <div className="flex justify-center items-center py-3 gap-1 bg-primary text-white dark:text-black text-sm">
-        <p className="text-white/60 dark:text-black/60">
+        <p className="text-white/60 hidden md:block dark:text-black/60">
           Hora de aumentar seu sucesso financeiro.
         </p>
         <div className="inline-flex gap-1 items-center">
@@ -36,7 +36,7 @@ export const Header = () => {
             width={40}
             className="rounded-lg bg-black p-1"
           />
-          <MenuIcon className="size-6 hidden md:hidden" />
+          <MenuIcon className="size-6 md:hidden" />
           <nav className="hidden md:flex items-center gap-6 text-primary/60 transition-colors">
             {navLinks.map((link) => (
               <Link
