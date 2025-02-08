@@ -21,7 +21,7 @@ export const Hero = () => {
             </div>
             <h1
               className="text-5xl md:text-7xl font-semibold tracking-tighter 
-              leading-normal mt-6"
+              mt-6"
             >
               Diga adeus à falhas de pagamentos
             </h1>

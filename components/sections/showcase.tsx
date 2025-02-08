@@ -10,14 +10,12 @@ export const ProductShowcase = () => {
           </div>
 
           <h2
-            className="text-3xl md:text-5xl font-semibold tracking-tighter text-center 
-          bg-gradient-to-br from-black to-PRIMARY_PINK dark:from-PRIMARY_PINK 
-          dark:to-PRIMARY_YELLOW text-transparent bg-clip-text py-2 mt-5"
+            className="section-title"
           >
             A forma mais eficiente para gerenciar seus pagamentos!
           </h2>
 
-          <p className="text-center text-[22px] leading-[30px] tracking-tight text-primary/80 mt-5">
+          <p className="section-subtitle">
             Uma API única para <strong>Devs</strong>, Dashboard intuitivo para
             os <strong>vendedores</strong> online.
           </p>
