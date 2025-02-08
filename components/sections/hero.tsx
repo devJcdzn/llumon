@@ -14,11 +14,7 @@ export const Hero = () => {
       <div className="px-4 md:px-0 container mx-auto">
         <div className="md:flex items-center">
           <div className="md:w-[478px]">
-            <div
-              className="tag"
-            >
-              Se inscreva para o BETA
-            </div>
+            <div className="tag">Se inscreva para o BETA</div>
             <h1
               className="text-5xl md:text-7xl font-semibold tracking-tighter 
               mt-6"
@@ -29,7 +25,7 @@ export const Hero = () => {
               Gerencie múltiplos gateways em um só lugar, escolha o melhor
               gateway para cada transação, reduza taxas e aumente sua conversão.
             </p>
-            <div className="flex gap-1 items-center mt-[30px]">
+            <div className="flex flex-col md:flex-row gap-2 md:items-center mt-[30px]">
               <Link
                 href="/docs"
                 className={cn(buttonVariants({ variant: "outline" }))}

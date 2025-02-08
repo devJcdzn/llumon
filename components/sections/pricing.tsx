@@ -48,7 +48,7 @@ const pricingTiers = [
 
 export const Pricing = () => {
   return (
-    <section>
+    <section className="py-24">
       <div className="px-4 mdx-0 container mx-auto">
         <div className="section-heading">
           <h2 className="section-title">Nossos Preços</h2>

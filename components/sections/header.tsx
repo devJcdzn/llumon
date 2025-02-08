@@ -15,10 +15,10 @@ const navLinks = [
 
 export const Header = () => {
   return (
-    <header className="sticky top-0 z-10 backdrop-blur-lg bg-background/20">
+    <header className="sticky top-0 z-10 backdrop-blur-lg">
       <div className="flex justify-center items-center py-3 gap-1 bg-primary text-white dark:text-black text-sm">
         <p className="text-white/60 hidden md:block dark:text-black/60">
-          Hora de aumentar seu sucesso financeiro.
+          Hora de revolucionar as vendas online.
         </p>
         <div className="inline-flex gap-1 items-center">
           <p>
@@ -29,13 +29,18 @@ export const Header = () => {
       </div>
       <div className="py-5">
         <div className="px-4 md:px-0 md:container mx-auto flex items-center justify-between">
-          <Image
-            src={"/llumon.png"}
-            alt="llumon Logo"
-            height={40}
-            width={40}
-            className="rounded-lg bg-black p-1"
-          />
+          <Link href={"#"} className="flex items-center gap-1">
+            <Image
+              src={"/llumon.png"}
+              alt="llumon Logo"
+              height={40}
+              width={40}
+              className="rounded-lg bg-black p-1"
+            />
+            <span>
+              llumon<strong>pay</strong>
+            </span>
+          </Link>
           <MenuIcon className="size-6 md:hidden" />
           <nav className="hidden md:flex items-center gap-6 text-primary/60 transition-colors">
             {navLinks.map((link) => (
