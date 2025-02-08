@@ -15,8 +15,7 @@ export const Hero = () => {
         <div className="md:flex items-center">
           <div className="md:w-[478px]">
             <div
-              className="text-sm inline-flex border border-[#222]/10 dark:border-primary/20 px-3 py-1 
-          rounded-lg cursor-default tracking-tight"
+              className="tag"
             >
               Se inscreva para o BETA
             </div>
