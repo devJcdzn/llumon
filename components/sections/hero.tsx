@@ -7,7 +7,7 @@ import Image from "next/image";
 export const Hero = () => {
   return (
     <section
-      className="pt-8 pb-20 md:p-5 md:pb-10 
+      className="pt-8 pb-20 md:pt-2 md:pb-10 
       bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#FF66C4,#FFF_66%)] 
       dark:bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#FF66C4,#000_66%)]"
     >
