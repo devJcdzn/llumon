@@ -14,15 +14,15 @@ const navLinks = [
 const socialMedia = [
   {
     icon: Instagram,
-    path: "https://instagram.com.br",
+    path: "https://www.instagram.com/jean_cl_oliveira/",
   },
   {
     icon: Twitter,
-    path: "https://x.com.br",
+    path: "https://x.com/clo_jeann",
   },
   {
     icon: Youtube,
-    path: "https://youtube.com.br",
+    path: "https://www.youtube.com/@jean_cl",
   },
 ];
 
@@ -53,7 +53,7 @@ export const FooterSection = () => {
         </nav>
         <div className="flex items-center gap-6 mt-6">
           {socialMedia.map((social) => (
-            <Link key={social.path} href={"#"}>
+            <Link key={social.path} href={social.path}>
               <social.icon className="size-5 text-white/60 hover:text-white transition-colors" />
             </Link>
           ))}

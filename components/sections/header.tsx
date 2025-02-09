@@ -13,7 +13,7 @@ const navLinks = [
   // { path: "/updates", text: "Updates" },
 ];
 
-export const Header = () => {
+export const Header = ({ links }: { links?: typeof navLinks }) => {
   return (
     <header className="sticky top-0 z-10 backdrop-blur-lg bg-background/40">
       <div className="flex justify-center items-center py-3 gap-1 bg-primary text-white dark:text-black text-sm">
@@ -43,7 +43,7 @@ export const Header = () => {
           </Link>
           <MenuIcon className="size-6 md:hidden" />
           <nav className="hidden md:flex items-center gap-6 text-primary/60 transition-colors">
-            {navLinks.map((link) => (
+            {(links || navLinks).map((link) => (
               <Link
                 href={link.path}
                 key={link.path}
