@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter, Poppins } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/prviders/theme-provider";
+import { ThemeProvider } from "@/providers/theme-provider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -36,6 +36,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
+      dir="ltr"
       style={{ scrollBehavior: "smooth" }}
       suppressHydrationWarning
     >
