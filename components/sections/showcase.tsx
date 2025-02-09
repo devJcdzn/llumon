@@ -1,17 +1,19 @@
+"use client";
+import { useTheme } from "next-themes";
 import Image from "next/image";
 
 export const ProductShowcase = () => {
+  const { theme } = useTheme();
+
   return (
-    <section className="py-24 bg-gradient-to-t from-PRIMARY_PINK/30 to-transparent">
+    <section id="about" className="py-24 bg-gradient-to-t from-PRIMARY_PINK/30 to-transparent">
       <div className="px-4 md:py-0 container mx-auto">
         <div className="section-heading">
           <div className="flex justify-center">
             <div className="tag">Revolucione seus checkouts</div>
           </div>
 
-          <h2
-            className="section-title"
-          >
+          <h2 className="section-title">
             A forma mais eficiente para gerenciar seus pagamentos!
           </h2>
 
@@ -22,7 +24,7 @@ export const ProductShowcase = () => {
         </div>
         <div className="relative">
           <Image
-            src={"/Dashboard.png"}
+            src={theme === "light" ? "/Dashboard.png" : "/Dashboard-dark.png"}
             alt="llumon Dashboard showcase"
             width={2000}
             height={2000}

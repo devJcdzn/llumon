@@ -7,15 +7,15 @@ import { ToggleThemeButton } from "../toggle-theme-button";
 
 const navLinks = [
   { path: "#about", text: "Sobre" },
-  { path: "#features", text: "Features" },
-  { path: "/pricing", text: "Preços" },
+  { path: "/features", text: "Features" },
+  { path: "#pricing", text: "Preços" },
   { path: "/docs", text: "Docs" },
-  { path: "/updates", text: "Updates" },
+  // { path: "/updates", text: "Updates" },
 ];
 
 export const Header = () => {
   return (
-    <header className="sticky top-0 z-10 backdrop-blur-lg">
+    <header className="sticky top-0 z-10 backdrop-blur-lg bg-background/40">
       <div className="flex justify-center items-center py-3 gap-1 bg-primary text-white dark:text-black text-sm">
         <p className="text-white/60 hidden md:block dark:text-black/60">
           Hora de revolucionar as vendas online.
@@ -29,7 +29,7 @@ export const Header = () => {
       </div>
       <div className="py-5">
         <div className="px-4 md:px-0 md:container mx-auto flex items-center justify-between">
-          <Link href={"#"} className="flex items-center gap-1">
+          <Link href={"#home"} className="flex items-center gap-1">
             <Image
               src={"/llumon.png"}
               alt="llumon Logo"
@@ -53,7 +53,7 @@ export const Header = () => {
               </Link>
             ))}
             <Link
-              href={"#"}
+              href={"https://tally.so/r/w7aroP"}
               className={cn(buttonVariants({ variant: "primary" }))}
             >
               Solicitar BETA

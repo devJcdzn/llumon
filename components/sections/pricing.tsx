@@ -8,6 +8,7 @@ const pricingTiers = [
   {
     plan: "Gateway",
     monthlyPrice: 0,
+    buttonPath: "https://tally.so/r/w7aroP",
     buttonText: "Começar grátis",
     description:
       "llumon as a Gateway, ideal para novos negócios ou vendedores que querem um checkouts eficiente sem perder vendas.",
@@ -24,6 +25,7 @@ const pricingTiers = [
     monthlyPrice: 99,
     yearlyPrice: 990,
     buttonText: "Quero integrar!",
+    buttonPath: "https://tally.so/r/w7aroP",
     description:
       "Build Your Own Gateway, ideal para empresas que já possuem gateways e querem apenas integra-los para nossa api simplificada e vantagens.",
     popular: false,
@@ -48,7 +50,7 @@ const pricingTiers = [
 
 export const Pricing = () => {
   return (
-    <section className="py-24">
+    <section id="pricing" className="py-24">
       <div className="px-4 mdx-0 container mx-auto">
         <div className="section-heading">
           <h2 className="section-title">Nossos Preços</h2>
@@ -92,7 +94,7 @@ export const Pricing = () => {
                 </span>
               </div>
               <Link
-                href={"#"}
+                href={plan.buttonPath}
                 className={cn(
                   buttonVariants({ variant: "primary" }),
                   "w-full mt-7"

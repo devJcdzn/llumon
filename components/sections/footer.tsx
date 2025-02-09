@@ -5,10 +5,10 @@ import { Instagram, Twitter, Youtube } from "lucide-react";
 
 const navLinks = [
   { path: "#about", text: "Sobre" },
-  { path: "#features", text: "Features" },
+  { path: "/features", text: "Features" },
   { path: "#pricing", text: "Preços" },
   { path: "/docs", text: "Docs" },
-  { path: "/updates", text: "Updates" },
+  // { path: "/updates", text: "Updates" },
 ];
 
 const socialMedia = [
@@ -30,7 +30,7 @@ export const FooterSection = () => {
   return (
     <footer className="pb-16 bg-black text-white pt-24 text-sm text-center flex items-center justify-center">
       <div className="flex flex-col items-center gap-6">
-        <Link href={"#"} className="flex flex-col items-center gap-1">
+        <Link href={"#home"} className="flex flex-col items-center gap-1">
           <div className="relative inline-flex before:content-[''] before:absolute before:top-2 before:bottom-0 before:blur before:w-full before:bg-[linear-gradient(to_right,#F87BFF,#FB92CF,#FFDD9B,#C2F0B1,#2FD8FE)]">
             <Image
               src={"/llumon.png"}

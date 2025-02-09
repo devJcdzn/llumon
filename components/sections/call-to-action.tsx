@@ -38,7 +38,7 @@ export const CallToAction = () => {
             <Book className="size-5" />
           </Link>
           <Link
-            href={"#"}
+            href={"https://tally.so/r/w7aroP"}
             className={cn(buttonVariants({ variant: "primary" }))}
           >
             Quero testar o BETA
